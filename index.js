@@ -11,6 +11,7 @@ mongoose
 .then(console.log("database connected"))
 .catch((e)=>console.log("database error", e.toString()));
 app.use(express.json());
+app.use("./assets", express.static("public"))
 app.use(morgan ("tiny"));
 app.use("./", indexRouter);
 
