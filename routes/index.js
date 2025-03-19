@@ -8,7 +8,7 @@ router.get("/",(req, res, next )=>{
         next(e)
         
     }
-})
+});
 
 
 module.exports = router;
